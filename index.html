@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js"> 
+	</script>
+	<link href="css/Lab15.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body ng-app="ToDoList">
+
+<div id=inputDiv>
+<form ng-controller="mainController" ng-submit="addToDo()">
+	
+	<input type="text" ng-model="inputText" id="inputText">
+	<input type="submit" id="submit"/>
+
+  <h3>To Do List</h3-->
+
+	<ul>
+		<li ng-repeat="task in arrayToDoList">{{task}}
+	</ul>
+
+</form>
+</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+	</script>
+	<script src="js/Lab15.js"> </script>
+
+</div>
+</body>
+</html>
